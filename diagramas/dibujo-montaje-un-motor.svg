@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 990" width="1240" height="990"><title>Montaje de prueba con un motor: Arduino UNO, L298N, cuatro AA y resistencia de 10 kiloohmios</title><rect width="1240" height="990" fill="#fff"/><g font-family="Segoe UI,Arial,sans-serif">
+<text x="45" y="50" font-size="32" text-anchor="start" fill="#183954" font-weight="600">Dibujo del montaje · UN motor</text>
+<text x="45" y="85" font-size="19" text-anchor="start" fill="#263344" font-weight="400">Vista simplificada: seguí los nombres de los pines, no su posición en este dibujo.</text>
+<rect x="60" y="280" width="225" height="412" fill="#def2f2" stroke="#178781" rx="16"/>
+<text x="172" y="320" font-size="25" text-anchor="middle" fill="#165c59" font-weight="600">Arduino UNO</text>
+<rect x="80" y="340" width="44" height="48" fill="#d7e1e6" stroke="#708492" rx="3"/>
+<text x="102" y="414" font-size="18" text-anchor="middle" fill="#263344" font-weight="400">USB</text>
+<rect x="90" y="472" width="45" height="114" fill="#364650" stroke="#24313c" rx="3"/>
+<path d="M83,483h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,483h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,496h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,496h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,509h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,509h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,522h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,522h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,535h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,535h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,548h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,548h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,561h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,561h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,574h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M135,574h8" fill="none" stroke="#849ba3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M80,364H45V224H175" fill="none" stroke="#879aa5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="187" y="231" font-size="20" text-anchor="start" fill="#263344" font-weight="400">USB a la laptop</text>
+<rect x="710" y="280" width="245" height="412" fill="#fde5e5" stroke="#b64545" rx="12"/>
+<text x="832" y="321" font-size="27" text-anchor="middle" fill="#8b2828" font-weight="600">L298N</text>
+<rect x="790" y="339" width="140" height="66" fill="#35404b" stroke="#1a2530" rx="3"/>
+<path d="M799,346v52" fill="none" stroke="#74808c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M818,346v52" fill="none" stroke="#74808c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M837,346v52" fill="none" stroke="#74808c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M856,346v52" fill="none" stroke="#74808c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M875,346v52" fill="none" stroke="#74808c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M894,346v52" fill="none" stroke="#74808c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M913,346v52" fill="none" stroke="#74808c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="765" y="536" width="43" height="43" fill="#e1e5e8" stroke="#6d7680" rx="20"/>
+<rect x="874" y="594" width="43" height="43" fill="#e1e5e8" stroke="#6d7680" rx="20"/>
+<text x="440" y="163" font-size="20" text-anchor="middle" fill="#8b2828" font-weight="600">Puentes 5V-EN y ENA retirados</text>
+<text x="440" y="193" font-size="19" text-anchor="middle" fill="#263344" font-weight="400">Pin +5V vecino de ENA: libre</text>
+<rect x="740" y="120" width="350" height="111" fill="#29333e" stroke="#131c27" rx="10"/>
+<rect x="757" y="133" width="68" height="78" fill="#ca7035" stroke="#e0a46b" rx="9"/>
+<rect x="761" y="155" width="60" height="47" fill="#343f48" stroke="#343f48" rx="3"/>
+<text x="791" y="185" font-size="20" text-anchor="middle" fill="#fff" font-weight="400">AA</text>
+<rect x="837" y="133" width="68" height="78" fill="#ca7035" stroke="#e0a46b" rx="9"/>
+<rect x="841" y="155" width="60" height="47" fill="#343f48" stroke="#343f48" rx="3"/>
+<text x="871" y="185" font-size="20" text-anchor="middle" fill="#fff" font-weight="400">AA</text>
+<rect x="917" y="133" width="68" height="78" fill="#ca7035" stroke="#e0a46b" rx="9"/>
+<rect x="921" y="155" width="60" height="47" fill="#343f48" stroke="#343f48" rx="3"/>
+<text x="951" y="185" font-size="20" text-anchor="middle" fill="#fff" font-weight="400">AA</text>
+<rect x="997" y="133" width="68" height="78" fill="#ca7035" stroke="#e0a46b" rx="9"/>
+<rect x="1001" y="155" width="60" height="47" fill="#343f48" stroke="#343f48" rx="3"/>
+<text x="1031" y="185" font-size="20" text-anchor="middle" fill="#fff" font-weight="400">AA</text>
+<text x="917" y="258" font-size="20" text-anchor="middle" fill="#263344" font-weight="400">4 AA · pack medido: 6,03 V</text>
+<rect x="1040" y="350" width="77" height="160" fill="#252d35" stroke="#111c25" rx="12"/>
+<path d="M1046,362h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1046,380h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1046,398h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1046,416h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1046,434h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1046,452h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1046,470h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1046,488h65" fill="none" stroke="#5b6770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1118" y="390" width="74" height="85" fill="#ffe17b" stroke="#b98c20" rx="9"/>
+<rect x="1124" y="373" width="61" height="34" fill="#d4dde4" stroke="#7d909e" rx="5"/>
+<text x="1120" y="546" font-size="22" text-anchor="middle" fill="#263344" font-weight="400">Motor TT</text>
+<text x="1120" y="574" font-size="21" text-anchor="middle" fill="#263344" font-weight="400">3–6 V</text>
+<path d="M1062,231V280H1000V798H906V692" fill="none" stroke="#dc3b42" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="906" cy="692" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<text x="885" y="672" font-size="21" text-anchor="end" fill="#dc3b42" font-weight="600">12V</text>
+<text x="1075" y="243" font-size="22" text-anchor="start" fill="#dc3b42" font-weight="400">+</text>
+<path d="M768,231V241H30V834H700" fill="none" stroke="#263344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="746" y="232" font-size="22" text-anchor="start" fill="#263344" font-weight="400">−</text>
+<text x="47" y="821" font-size="20" text-anchor="start" fill="#263344" font-weight="400">Negativo de pilas</text>
+<circle cx="325" cy="834" r="6" fill="#263344"/>
+<circle cx="548" cy="834" r="6" fill="#263344"/>
+<path d="M285,657H325V834" fill="none" stroke="#263344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M710,657H700V834" fill="none" stroke="#263344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="700" cy="834" r="6" fill="#263344"/>
+<path d="M468,367V386" fill="none" stroke="#263344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="459" y="386" width="18" height="40" fill="#f3e7cd" stroke="#6c5b44" rx="3"/>
+<path d="M468,426V432H548V834" fill="none" stroke="#263344" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="448" y="414" font-size="20" text-anchor="end" fill="#263344" font-weight="400">10 kΩ</text>
+<circle cx="468" cy="367" r="6" fill="#1465cc"/>
+<path d="M285,367H710" fill="none" stroke="#1465cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="367" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<circle cx="710" cy="367" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<text x="270" y="374" font-size="22" text-anchor="end" fill="#1465cc" font-weight="600">D5</text>
+<text x="721" y="374" font-size="21" text-anchor="start" fill="#1465cc" font-weight="600">ENA</text>
+<path d="M285,461H710" fill="none" stroke="#008375" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M538,461h20" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M538,461Q548,445 558,461" fill="none" stroke="#008375" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="461" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<circle cx="710" cy="461" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<text x="270" y="468" font-size="22" text-anchor="end" fill="#008375" font-weight="600">D7</text>
+<text x="721" y="468" font-size="21" text-anchor="start" fill="#008375" font-weight="600">IN1</text>
+<path d="M285,505H710" fill="none" stroke="#7d40b6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M538,505h20" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M538,505Q548,489 558,505" fill="none" stroke="#7d40b6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="505" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<circle cx="710" cy="505" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<text x="270" y="512" font-size="22" text-anchor="end" fill="#7d40b6" font-weight="600">D8</text>
+<text x="721" y="512" font-size="21" text-anchor="start" fill="#7d40b6" font-weight="600">IN2</text>
+<path d="M285,607H710" fill="none" stroke="#d0700b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M538,607h20" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M538,607Q548,591 558,607" fill="none" stroke="#d0700b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="607" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<circle cx="710" cy="607" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<text x="270" y="614" font-size="22" text-anchor="end" fill="#d0700b" font-weight="600">5V</text>
+<text x="721" y="614" font-size="21" text-anchor="start" fill="#d0700b" font-weight="600">+5V</text>
+<circle cx="468" cy="367" r="6" fill="#1465cc"/>
+<text x="431" y="351" font-size="18" text-anchor="middle" fill="#263344" font-weight="400">unión</text>
+<text x="431" y="290" font-size="20" text-anchor="middle" fill="#263344" font-weight="400">D5 + ENA + resistencia</text>
+<text x="431" y="317" font-size="18" text-anchor="middle" fill="#263344" font-weight="400">se unen en la protoboard</text>
+<circle cx="285" cy="657" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<circle cx="710" cy="657" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<text x="270" y="664" font-size="21" text-anchor="end" fill="#263344" font-weight="400">GND</text>
+<text x="721" y="664" font-size="21" text-anchor="start" fill="#263344" font-weight="400">GND</text>
+<text x="548" y="872" font-size="22" text-anchor="middle" fill="#263344" font-weight="400">GND común: todos estos cables negros están unidos</text>
+<rect x="929" y="432" width="50" height="85" fill="#3c92bd" stroke="#23658a" rx="5"/>
+<circle cx="953" cy="453" r="11" fill="#d9e4ed" stroke="#637887"/><path d="M948,458l10,-10" stroke="#637887" stroke-width="2"/>
+<circle cx="953" cy="496" r="11" fill="#d9e4ed" stroke="#637887"/><path d="M948,501l10,-10" stroke="#637887" stroke-width="2"/>
+<path d="M978,453H1009V340H1140V373" fill="none" stroke="#326ab1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M987,453h20" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M987,453Q997,437 1007,453" fill="none" stroke="#326ab1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M978,496H1027V322H1170V373" fill="none" stroke="#894fb4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M990,496h20" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M990,496Q1000,480 1010,496" fill="none" stroke="#894fb4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1140" cy="373" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<circle cx="1170" cy="373" r="5" fill="white" stroke="#263344" stroke-width="2"/>
+<text x="917" y="460" font-size="20" text-anchor="end" fill="#263344" font-weight="400">OUT1</text>
+<text x="917" y="503" font-size="20" text-anchor="end" fill="#263344" font-weight="400">OUT2</text>
+<text x="1119" y="622" font-size="17" text-anchor="middle" fill="#263344" font-weight="400">Un cable en cada OUT.</text>
+<text x="1119" y="648" font-size="17" text-anchor="middle" fill="#263344" font-weight="400">Ninguno a GND.</text>
+<text x="45" y="924" font-size="20" text-anchor="start" fill="#263344" font-weight="400">● Unión de cables      Arco en un cruce = cables que no se tocan</text>
+<text x="45" y="957" font-size="20" text-anchor="start" fill="#263344" font-weight="400">Armá el cableado con USB y pilas desconectados. Las ruedas quedan levantadas para la prueba.</text>
+</g></svg>

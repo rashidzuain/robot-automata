@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.runtime/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.egg-info/
+diagramas/qa-*.png
+server/tests/screenshots/

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Robot · Centro de control</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <aside class="sidebar" aria-label="Proyecto">
+    <a class="brand" href="/" aria-label="Robot, inicio"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3v4M9 7h14l4 5v14H5V12zM1 15v7m30-7v7M11 21h10"/><circle cx="11" cy="14" r="1.5"/><circle cx="21" cy="14" r="1.5"/></svg></span><span>ROBOT<span class="brand-sub">Laboratorio personal</span></span></a>
+    <div class="sidebar-section">ESPACIO DE TRABAJO</div>
+    <a class="nav-item active" href="#main" aria-current="page"><span aria-hidden="true">▦</span> Vista general</a>
+    <a class="nav-item" href="/docs" target="_blank" rel="noopener"><span aria-hidden="true">↗</span> Documentación API</a>
+    <div class="sidebar-bottom"><span class="local-dot" aria-hidden="true"></span> Servidor local<span class="sidebar-note">Tus datos, en esta computadora.</span><span id="version" class="version">v0.1.0</span></div>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <header class="page-header"><div><p class="eyebrow">PROYECTO ROBOT AUTÓMATA</p><h1>Vista general</h1><p class="subtitle">Un lugar para observar y entender tu robot.</p></div><div id="server-status" class="status-pill waiting" role="status"><span class="status-dot" aria-hidden="true"></span><span id="server-status-text">Conectando al servidor</span></div></header>
+
+    <div id="connection-error" class="error-banner" role="alert" hidden><div><strong>Conexión interrumpida</strong><p id="connection-error-text">No se pudo actualizar el servidor. Las lecturas visibles pueden estar desactualizadas.</p></div><button id="retry-button" class="button button-small" type="button">Reintentar</button></div>
+
+    <section class="connection-card" aria-labelledby="robot-title"><div class="robot-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 8v7M19 16h26l7 9v25H12V25zM6 29v13m52-13v13M24 41h16"/><circle cx="24" cy="29" r="3"/><circle cx="40" cy="29" r="3"/></svg></div><div class="connection-copy"><div class="title-line"><h2 id="robot-title">Robot real</h2><span id="device-status" class="small-badge neutral">Sin conexión</span></div><p id="device-description">Esperando la primera conexión de robot-01.</p></div><div class="last-seen"><span>ÚLTIMA CONEXIÓN</span><strong id="last-seen">Todavía no hay datos</strong></div></section>
+
+    <section class="source-section" aria-label="Origen de los datos"><div class="source-controls"><div class="segmented" role="group" aria-label="Elegir origen de los datos"><button id="source-device" type="button" aria-pressed="true">Robot real</button><button id="source-demo" type="button" aria-pressed="false">Simulación</button></div><span id="source-caption" class="source-caption">Lecturas enviadas por tu robot</span></div><button id="demo-button" class="button button-primary" type="button" disabled><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 7 5-7 5z"/></svg><span id="demo-button-text">Iniciar simulación</span></button></section>
+
+    <div id="demo-notice" class="demo-notice" hidden><span class="demo-label">SIMULACIÓN</span><p id="demo-notice-text">Datos de ejemplo generados por el servidor. No representan mediciones del robot ni mueven los motores.</p></div>
+    <p id="action-error" class="action-error" role="alert" hidden></p>
+
+    <section class="metrics" aria-label="Últimas lecturas"><article class="metric-card"><div class="metric-top"><h2>Voltaje de batería</h2><span class="metric-icon" aria-hidden="true">ϟ</span></div><p class="metric-value"><span id="battery-value">—</span><span class="unit">V</span></p><p class="metric-note">Tensión medida, sin estimar carga</p></article><article class="metric-card"><div class="metric-top"><h2>Distancia</h2><span class="metric-icon" aria-hidden="true">↔</span></div><p class="metric-value"><span id="distance-value">—</span><span class="unit">cm</span></p><p class="metric-note">Lectura del sensor de distancia</p></article><article class="metric-card"><div class="metric-top"><h2>Sensor IR izquierdo</h2><span class="metric-icon" aria-hidden="true">◉</span></div><p id="ir-left-value" class="metric-value metric-state">—</p><p class="metric-note">Estado lógico recibido</p></article><article class="metric-card"><div class="metric-top"><h2>Sensor IR derecho</h2><span class="metric-icon" aria-hidden="true">◉</span></div><p id="ir-right-value" class="metric-value metric-state">—</p><p class="metric-note">Estado lógico recibido</p></article></section>
+    <div class="reading-info"><span id="reading-time">Sin lecturas para este origen</span><span id="sample-count">0 muestras guardadas en total</span></div>
+
+    <div class="content-grid"><section class="panel chart-panel" aria-labelledby="chart-title"><div class="panel-heading"><div><h2 id="chart-title">Distancia en el tiempo</h2><p>Hasta 60 lecturas recientes</p></div><span id="chart-source" class="outline-badge">ROBOT REAL</span></div><div class="chart-area"><div id="chart-empty" class="empty-state"><span class="empty-icon" aria-hidden="true">⌁</span><h3>Aún no hay lecturas de distancia</h3><p id="chart-empty-text">Conectá el robot o iniciá una simulación para explorar el panel.</p></div><div id="chart-content" hidden><div class="chart-scale"><span id="chart-max">—</span><span>cm</span></div><svg id="distance-chart" viewBox="0 0 800 180" preserveAspectRatio="none" role="img" aria-label="Evolución de las lecturas de distancia"><line class="grid-line" x1="0" y1="15" x2="800" y2="15"/><line class="grid-line" x1="0" y1="90" x2="800" y2="90"/><line class="grid-line" x1="0" y1="165" x2="800" y2="165"/><polyline id="chart-line" points=""/><circle id="chart-dot" r="4" cx="0" cy="90"/></svg><div class="chart-axis"><span id="chart-start">—</span><span id="chart-end">—</span></div><span id="chart-min" class="chart-min">—</span></div></div></section>
+
+    <section class="panel events-panel" aria-labelledby="events-title"><div class="panel-heading"><div><h2 id="events-title">Actividad del servidor</h2><p>Últimos eventos</p></div><span class="activity-mark" aria-hidden="true">↗</span></div><ul id="events-list" class="events-list"><li class="events-empty">La actividad aparecerá acá.</li></ul></section></div>
+
+    <section class="panel history-panel" aria-labelledby="history-title"><div class="panel-heading"><div><h2 id="history-title">Historial de lecturas</h2><p id="history-description">Datos recibidos del robot real</p></div><span id="history-count" class="count-badge">0 lecturas</span></div><div class="table-scroll" tabindex="0" role="region" aria-label="Tabla de lecturas recientes"><table><thead><tr><th scope="col">Hora</th><th scope="col">Batería</th><th scope="col">Distancia</th><th scope="col">IR izquierdo</th><th scope="col">IR derecho</th><th scope="col">PWM izq. / der.</th></tr></thead><tbody id="history-body"><tr><td colspan="6" class="table-empty">Todavía no hay lecturas para mostrar.</td></tr></tbody></table></div></section>
+
+    <footer class="page-footer"><span><span class="footer-dot" aria-hidden="true"></span> Actualización automática cada segundo</span><span>Observación y registro · Sin control de motores</span></footer>
+  </main>
+</body>
+</html>
